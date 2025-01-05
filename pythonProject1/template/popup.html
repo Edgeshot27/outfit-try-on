@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outfit Try-On</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Outfit Try-On</h1>
+  <form id="upload-form">
+    <label for="user-image">Upload Your Image:</label>
+    <input type="file" id="user-image" accept="image/*"><br><br>
+
+    <label for="outfit-image">Upload Outfit Image:</label>
+    <input type="file" id="outfit-image" accept="image/*"><br><br>
+
+    <button type="button" id="try-on-button">Try On Outfit</button>
+  </form>
+
+  <div id="result">
+    <h2>Result:</h2>
+    <img id="output-image" alt="Processed Image">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

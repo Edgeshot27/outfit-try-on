@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Try-On</title>
+</head>
+<body>
+  <h1>Virtual Outfit Try-On</h1>
+
+  <!-- File inputs for user and outfit images -->
+  <label for="userImage">Upload User Image:</label>
+  <input type="file" id="userImage" accept="image/*">
+
+  <label for="outfitImage">Upload Outfit Image:</label>
+  <input type="file" id="outfitImage" accept="image/*">
+
+  <!-- Submit button -->
+  <button id="tryOnButton">Try On</button>
+
+  <!-- Placeholder for displaying the processed image -->
+  <h3>Processed Output:</h3>
+  <img id="outputImage" alt="Processed Image Will Appear Here" style="max-width: 100%; border: 1px solid black;">
+
+  <!-- Include JavaScript Files -->
+  <script src="/static/popup.js"></script> <!-- Your existing JavaScript -->
+  <script src="/static/tryon.js"></script> <!-- New JavaScript for Try-On -->
+</body>
+</html>
